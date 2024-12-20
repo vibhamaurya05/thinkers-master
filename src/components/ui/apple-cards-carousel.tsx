@@ -6,11 +6,11 @@ import React, {
   createContext,
   useContext,
 } from "react";
-import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-  IconX,
-} from "@tabler/icons-react";
+// import {
+//   IconArrowNarrowLeft,
+//   IconArrowNarrowRight,
+//   IconX,
+// } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
@@ -139,14 +139,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            {/* <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" /> */}
           </button>
           <button
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            {/* <IconArrowNarrowRight className="h-6 w-6 text-gray-500" /> */}
           </button>
         </div>
       </div>
@@ -184,7 +184,7 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  useOutsideClick(containerRef, () => handleClose());
+  // useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
     setOpen(true);
@@ -218,7 +218,7 @@ export const Card = ({
                 className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
-                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                {/* <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" /> */}
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
