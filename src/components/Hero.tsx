@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+// import Link from "next/link";
+// import { Button } from "@/components/ui/button";
+// import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { ImagesSlider } from "@/components/ui/images-slider";
